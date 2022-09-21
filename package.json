@@ -1,0 +1,23 @@
+{
+  "name": "straf-meester",
+  "description": "Punisher for developers.",
+  "private": true,
+  "author": "Roel Voordendag <rvoordendag@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "CONFIG_DIR=/src/config/ NODE_ENV=development nodemon --watch ../ ./src/server.js & tailwindcss -i ./src/style/style.css -o ./src/public/dist/style.css --watch",
+    "build": "tailwindcss -i ./src/style/style.css -o ./src/public/dist/style.css --minify",
+    "start": "node ./src/server.js"
+  },
+  "dependencies": {
+    "@neobeach/core": "^1.2.0",
+    "@supabase/supabase-js": "^1.35.3",
+    "dlv": "^1.1.3",
+    "ejs": "^3.1.8",
+    "node-fetch": "^2.6.7",    
+    "tailwindcss": "^3.1.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

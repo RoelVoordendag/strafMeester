@@ -1,0 +1,11 @@
+# Editor specific
+.idea
+.vscode
+
+# General files
+*~
+*.DS_STORE
+
+# NPM
+node_modules
+
